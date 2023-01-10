@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynavgraph"
+    app:startDestination="@id/fatherFragment">
+
+    <fragment
+        android:id="@+id/fatherFragment"
+        android:name="com.diyorbek.tabwfragmentaintenth1.fragment.FatherFragment"
+        android:label="fragment_father"
+        tools:layout="@layout/fragment_father" >
+        <action
+            android:id="@+id/action_fatherFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_fatherFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthFragment"
+        android:name="com.diyorbek.tabwfragmentaintenth1.fragment.FifthFragment"
+        android:label="fragment_fifth"
+        tools:layout="@layout/fragment_fifth" />
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.diyorbek.tabwfragmentaintenth1.fragment.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.diyorbek.tabwfragmentaintenth1.fragment.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.diyorbek.tabwfragmentaintenth1.fragment.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.diyorbek.tabwfragmentaintenth1.fragment.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.diyorbek.tabwfragmentaintenth1.fragment.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+</navigation>
